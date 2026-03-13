@@ -38,12 +38,17 @@ The MNIST dataset (`mnist.npz`, 220 MB) is too large for GitHub. Download it m
 
 Save the file in the project folder before running `cnn.py`.
 
+> **Optional:** Use `convert_data.py` to process custom image datasets into `.npz` format compatible with `cnn.py`.
+
 ---
 
 ## ▶️ How to Run
 
 ### Code:
 ```bash
+Prepare / Convert Dataset (Optional):
+python3 convert_data.py <image_dir> <H> <W> <C> <output.npz> <0|1>
+
 Training the Model:
 python3 cnn.py mnist.npz train
 
